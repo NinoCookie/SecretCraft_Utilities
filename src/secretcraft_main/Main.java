@@ -12,10 +12,7 @@ import org.bukkit.plugin.Plugin;
 import org.bukkit.plugin.RegisteredServiceProvider;
 import org.bukkit.plugin.java.JavaPlugin;
 
-import secretcraft_listeners.JobsListener;
-import secretcraft_listeners.PlayerJoinsListener;
-import secretcraft_listeners.PlotSquaredListener;
-import secretcraft_listeners.ShopChestListener;
+import secretcraft_listeners.*;
 
 import java.io.File;
 import java.sql.SQLException;
@@ -64,6 +61,13 @@ public class Main extends JavaPlugin {
                 plotSquaredListener.setPlugin(this);
                 Bukkit.getPluginManager().registerEvents(plotSquaredListener, this);
             }
+
+            //Villiager
+            VilliagerListener villiagerListener=new VilliagerListener();
+            Bukkit.getPluginManager().registerEvents(villiagerListener, this);
+
+
+
 
             //Commands:
             //Steuern anzeigen etc. Befehl(e)
