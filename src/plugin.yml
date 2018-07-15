@@ -1,0 +1,18 @@
+name: SecretCraft_Utilities
+author: Ninoo
+version: 1.1
+main: secretcraft_main.Main
+softdepend: [ShopChestListener,PlotSquaredListener,JobsListener]
+depends:  [Vault]
+commands:
+  taxes:
+    description: Zeigt die komplette Menge an Steuern
+    usage: /taxes
+    aliases: [taxes,steuern,tax,steuer]
+  taxsystem:
+    description: Zeigt einige Informationen zu Steuern
+    usage: /taxsystem
+    aliases: [taxsystem,steuersystem]
+  su:
+    description: Reloadet SecretCraft_Utilities
+    usage: /su reload

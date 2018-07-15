@@ -1,0 +1,37 @@
+Database:
+  #sqlite oder mysql
+  method: sqlite
+  MySQL:
+    hostname: "localhost"
+    port: "3306"
+    database: "minecraft"
+    username: "minecraft"
+    password: "password"
+ShopChest:
+  enable: true
+  percentage_buying: 10.0
+  percentage_selling: 10.0
+  buying: true
+  selling: true
+Jobs:
+  enable: false
+  percentage: 10.0
+PlotSquared:
+  enable: false
+  amount: 500.0
+AdminAccount:
+  use: false
+  name: "user"
+  shopchest:
+    emptychest: true
+Messages:
+  show_taxes: "§c[Steuersystem]§aDeine bisherigen Steuern: %money%"
+  show_other_taxes: "§c[Steuersystem]§aSteuern: %money% von %player%"
+  show_wrong_para: "§c[Steuersystem]§aFalsche Eingabe!"
+  not_enough_money: "Tut mir leid, du hast nicht genug Geld!"
+  permission: "Keine Berechtigung dafür"
+  taxsystem_info:
+    - "&2[SteuerSystem]&fHier stehen wichtige Informationen zu unserem Steuersystem:"
+    - ""
+    - ""
+  shop_wrong_placement: "&2[SecretCraft]&fHier darfst du keinen Shop erstellen!"

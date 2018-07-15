@@ -1,0 +1,30 @@
+Hier sind alle Permissions zum Plugin:
+taxsystem.see - /taxsystem
+taxsystem.showtaxes_others - /taxes name oder /steuern name
+taxsystem.showtaxes - /taxes oder /steuer
+taxsystem.showtaxes_all /taxes all/insgesamt
+taxsystem.showtaxes_error - Zeigt wenn ein User falsche Befehle eingegeben hat etc.
+taxsystem.notaxes - Mit dieser Permission umgehst du alle Steuern
+taxsystem.jobs - Mit dieser Permission umgehst du alle Steuern von Jobs
+taxsystem.shopchest - -..-
+su.reload - zum reloaded
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
