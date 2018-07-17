@@ -20,7 +20,7 @@ public class Cmd_su implements CommandExecutor {
                 }
             }
             if(strings[0].equalsIgnoreCase("gm3")){
-                if(commandSender instanceof Player && commandSender.hasPermission("su.gm0")){
+                if(commandSender instanceof Player && commandSender.hasPermission("su.gm3")){
                     if(((Player) commandSender).getGameMode()==GameMode.SPECTATOR){
                         ((Player) commandSender).setGameMode(GameMode.SURVIVAL);
                         return true;
