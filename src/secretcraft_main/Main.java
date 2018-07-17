@@ -2,8 +2,8 @@ package secretcraft_main;
 
 
 import com.sk89q.worldguard.bukkit.WorldGuardPlugin;
-import commands.Cmd_Reload;
 import commands.Cmd_TaxSystem;
+import commands.Cmd_su;
 import commands.Cmd_usertaxes;
 import database.DBManager;
 import net.milkbowl.vault.economy.Economy;
@@ -62,13 +62,6 @@ public class Main extends JavaPlugin {
                 Bukkit.getPluginManager().registerEvents(plotSquaredListener, this);
             }
 
-            //Villiager
-            VilliagerListener villiagerListener=new VilliagerListener();
-            Bukkit.getPluginManager().registerEvents(villiagerListener, this);
-
-
-
-
             //Commands:
             //Steuern anzeigen etc. Befehl(e)
             Cmd_usertaxes usertaxes=new Cmd_usertaxes();
@@ -79,9 +72,9 @@ public class Main extends JavaPlugin {
             taxSystem.setList(this.getConfig().getStringList("Messages.taxsystem_info"));
             this.getCommand("taxsystem").setExecutor(taxSystem);
             //Reload command
-            Cmd_Reload cmd_reload=new Cmd_Reload();
-            cmd_reload.setPlugin(this);
-            this.getCommand("su").setExecutor(cmd_reload);
+            Cmd_su cmd_su=new Cmd_su();
+            cmd_su.setPlugin(this);
+            this.getCommand("su").setExecutor(cmd_su);
         }
     }
 

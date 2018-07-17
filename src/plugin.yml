@@ -14,5 +14,6 @@ commands:
     usage: /taxsystem
     aliases: [taxsystem,steuersystem]
   su:
-    description: Reloadet SecretCraft_Utilities
-    usage: /su reload
+    description: Hauptbefehl für SC Utilities
+    usage: /su
+    aliases: [su]
